@@ -68,7 +68,14 @@ function App() {
   }, [datePicker]);
 
   return (
-    <div className="App">
+    <div
+      className="App bg--cover"
+      style={
+        apodData && {
+          backgroundImage: `url(${apodData.hdurl})`,
+        }
+      }
+    >
       <ApodContainer
         data={apodData}
         dateChange={setDatePicker}

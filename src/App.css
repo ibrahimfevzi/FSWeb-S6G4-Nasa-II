@@ -1,14 +1,17 @@
 * {
-  border: 1px solid tomato;
-  background-color: rgba(100, 100, 100, 0.3);
+  /* border: 0.1px solid rgba(100, 100, 100, 0.3); */
+  /*background-color: rgba(100, 100, 100, 0.3);*/
   box-sizing: border-box;
+  font-size: 0.8rem;
+  font-weight: bolder;
 }
 .App {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
+  color: white;
+  background-color: slategray;
 }
 
 .row {
@@ -26,16 +29,35 @@
   flex-grow: 1;
 }
 
+.bg--cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .App__Container {
   height: 80vh;
   width: 80vw;
+  min-height: 540px;
+  min-width: 960px;
   flex-grow: 0;
+  border-radius: 20px;
+  box-shadow: 0px 5px 40px rgb(0 0 0 / 0.3);
+  background-color: rgb(34, 33, 33);
 }
 
 .grow2 {
   flex-grow: 2;
 }
 
+.basis40 {
+  flex-basis: 40%;
+  flex-shrink: 0;
+}
+
+.basis20 {
+  flex-basis: 20%;
+  flex-shrink: 0;
+}
 .text--white {
   color: white;
 }

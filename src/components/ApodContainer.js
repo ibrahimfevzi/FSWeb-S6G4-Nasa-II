@@ -9,18 +9,18 @@ export default function BiComponent(props) {
   if (!data) return <h3>Yükleniyor...</h3>;
   return (
     <div className="row App__Container">
-      <div className="column grow2">
+      <div className="column grow2 basis40">
         <div className="row">
-          <div className="column text--white">row column</div>
+          <div className="column">ASTRONOMY PICTURE OF THE DAY</div>
         </div>
         <div className="row grow2">
-          <div className="column">row column</div>
+          <div className="column">row column 1</div>
         </div>
         <div className="row">
-          <div className="column">row column</div>
+          <div className="column">row column 2 </div>
         </div>
       </div>
-      <div className="column grow2">
+      <div className="column grow2 basis40">
         <div className="row">
           <div className="column">
             <label htmlFor="apodDate">apodDate:</label>
@@ -33,7 +33,7 @@ export default function BiComponent(props) {
           </div>
         </div>
         <div className="row">
-          <div className="column">row column</div>
+          <div className="column">row column 3</div>
         </div>
         <div className="row">
           <div className="column">
@@ -49,14 +49,14 @@ export default function BiComponent(props) {
           </div>
         </div>
       </div>
-      <div className="column">
+      <div className="column basis20">
         <div className="row">
           <div className="column">
             <p>{data.date}</p>
           </div>
         </div>
         <div className="row">
-          <div className="column">row column</div>
+          <div className="column">row column 4</div>
         </div>
       </div>
     </div>
